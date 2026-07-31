@@ -30,9 +30,7 @@ jobs:
           coverage: none
 
       - name: Install dependencies
-        run: |
-          composer require "illuminate/cache:${{ matrix.laravel }}" "illuminate/contracts:${{ matrix.laravel }}" "illuminate/http:${{ matrix.laravel }}" "illuminate/support:${{ matrix.laravel }}" --no-interaction --no-update
-          composer update --prefer-dist --no-interaction
+        run: composer update --prefer-dist --no-interaction
 
       - name: Run Pint
         run: composer format-check
