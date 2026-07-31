@@ -1,0 +1,50 @@
+name: Bug Report
+description: Create a report to help us improve the package
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: version
+    attributes:
+      label: Laravel Daraja Version
+      description: What version of this package are you using? (e.g., 1.0.0)
+    validations:
+      required: true
+  - type: input
+    id: laravel
+    attributes:
+      label: Laravel Version
+      description: What version of Laravel are you using? (e.g., 11.0.0)
+    validations:
+      required: true
+  - type: input
+    id: php
+    attributes:
+      label: PHP Version
+      description: What version of PHP are you using? (e.g., 8.2.0)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior. Please provide a minimal code example if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
